@@ -23,13 +23,17 @@ const Customizer = () => {
     <AnimatePresence>
       {!snap.intro && (
         <div>
-          <motion.div key="custom" className="absolute top-0 left-0 z-10">
+          <motion.div
+            key="custom"
+            className="absolute top-0 left-0 z-10"
+            {...slideAnimation("left")}
+          >
             hhh
           </motion.div>
         </div>
       )}
     </AnimatePresence>
   );
-};
+}; // there was supposed to be an empty tag instead of div above
 
 export default Customizer;
