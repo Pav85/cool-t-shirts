@@ -1,6 +1,6 @@
 import React from "react";
 
-const CustomButton = ({ title }) => {
+const CustomButton = ({ type, title, customStyles, handleClick }) => {
   return <button className={"px-2"}>{title}</button>;
 };
 
