@@ -12,7 +12,17 @@ import {
 const Home = () => {
   const snap = useSnapshot(state);
 
-  return <div>Home</div>;
+  return (
+    <AnimatePresence>
+      {snap.intro && (
+        <motion.section className="home" {...slideAnimation("left")}>
+          <motion.header>
+            <img src="./threejs.png" />
+          </motion.header>
+        </motion.section>
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Home;
