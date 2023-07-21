@@ -18,7 +18,7 @@ const Home = () => {
         <motion.section className="home" {...slideAnimation("left")}>
           <motion.header>
             <img
-              src="/client/public/"
+              src="./threejs.png"
               alt="logo"
               className="w-8 h-8 object-contain"
             />
