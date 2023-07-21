@@ -43,6 +43,7 @@ const Shirt = () => {
             scale={0.15}
             map={logoTexture}
             // map-anisotropy={16}
+            // anisotropy={16}
             depthTest={false}
             depthWrite={true}
           />
