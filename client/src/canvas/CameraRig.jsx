@@ -12,6 +12,10 @@ const CameraRig = ({ children }) => {
   useFrame((state, delta) => {
     const isBreakpoint = window.innerWidth <= 1260;
     const isMobile = window.innerWidth <= 600;
+
+    // set position of the model
+
+    let targetPosition = [-0.4, 0, 2];
     //   set model rotation smoothly
 
     easing.dampE(
