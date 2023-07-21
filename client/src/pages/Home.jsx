@@ -10,6 +10,8 @@ import {
 } from "../config/motion";
 
 const Home = () => {
+  const snap = useSnapshot(state);
+
   return <div>Home</div>;
 };
 
