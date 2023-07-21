@@ -17,7 +17,19 @@ import {
 } from "../components";
 
 const Customizer = () => {
-  return <div>Customizer</div>;
+  const snap = useSnapshot(state);
+
+  return (
+    <AnimatePresence>
+      {!snap.intro && (
+        <div>
+          <motion.div key="custom" className="absolute top-0 left-0 z-10">
+            hhh
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Customizer;
