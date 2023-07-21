@@ -31,8 +31,11 @@ const Home = () => {
               </h1>
             </motion.div>
 
-            <motion.div>
-              <p>
+            <motion.div
+              {...headContainerAnimation}
+              className="flex flex-col gap-5"
+            >
+              <p className="max-w-md font-normal text-gray-600 text-base">
                 Create your unique and exclusive t-shirt with our brand-new 3D
                 customization tool. <strong>Unleash your imagination</strong>
                 {""} and define your own style.
