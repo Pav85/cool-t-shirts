@@ -30,7 +30,16 @@ const Customizer = () => {
 
   // show tab content depending on the active tab
 
-  const generateTabContent = () => {};
+  const generateTabContent = () => {
+    switch (activeEditorTab) {
+      case "colorpicker":
+        return <ColorPicker />;
+      case "filepicker":
+        return <FilePicker />;
+      case "aipicker":
+        return <aipicker />;
+    }
+  };
 
   return (
     <AnimatePresence>
