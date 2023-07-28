@@ -17,8 +17,9 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
         isFilterTab ? "rounded-full glassmorhism" : "rounded-4"
       }`}
       onClick={handleClick}
+      style={activeStyles}
     >
-      Tab
+      <img src={tab.icon} />
     </div>
   );
 };
