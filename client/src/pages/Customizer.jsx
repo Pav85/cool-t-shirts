@@ -38,6 +38,8 @@ const Customizer = () => {
         return <FilePicker />;
       case "aipicker":
         return <aipicker />;
+      default:
+        null;
     }
   };
 
