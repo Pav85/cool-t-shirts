@@ -61,8 +61,8 @@ const Customizer = () => {
       case "stylishShirt":
         state.isFullTexture = !activeFilterTab[tabName];
       default:
-        state.isFullTexture = true;
         state.isLogoTexture = true;
+        state.isFullTexture = false;
     }
   };
 
