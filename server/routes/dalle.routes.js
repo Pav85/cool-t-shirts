@@ -10,7 +10,9 @@ const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = router.route("/").get((req, res) => {
+const openai = new OpenAIApi(config);
+
+router.route("/").get((req, res) => {
   res.status(200).json({ message: "Hello from DALL.E ROUTES" });
 });
 
