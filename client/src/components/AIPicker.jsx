@@ -1,7 +1,16 @@
 import React from "react";
 
-const AIPicker = () => {
-  return <div>AIPicker</div>;
+import CustomButton from "./CustomButton";
+
+const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
+  return (
+    <div className="aipicker-container">
+      <textarea
+        placeholder="Ask Ai..."
+        className="aipicker-textarea"
+      ></textarea>
+    </div>
+  );
 };
 
 export default AIPicker;
