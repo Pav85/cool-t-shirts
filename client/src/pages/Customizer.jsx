@@ -97,6 +97,7 @@ const Customizer = () => {
       default:
         state.isLogoTexture = true;
         state.isFullTexture = false;
+        break;
     }
     setActiveFilterTab((prevState) => {
       return {
